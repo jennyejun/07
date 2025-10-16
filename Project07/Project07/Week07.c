@@ -1,15 +1,16 @@
 #include <stdio.h>
 
-int inc(int counter) {
-	counter++;
-	return counter;
+void f(void){
+	int i;
+	for (i = 0; i < 10; i++) {
+		printf("#");
+	}
 }
 
 int main(void) {
-	int i = 10;
-	printf("함수 호출전 i=%d\n", i);
-	i = inc(i);
-	printf("함수 호출후 i=%d\n", i);
-	
+	int j;
+	for(j = 0; j < 5; j++) {
+		f();
+	}
 	return 0;
 	}
