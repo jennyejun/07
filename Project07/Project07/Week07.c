@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main(void) {
-	int flag = 1;
-	int y;
-	while (flag != 0) {
-		y = 3;
-		flag = 0;
+	int i;
+	int temp = 1;
+
+	for (i = 0; i < 5; i++) {
+		printf("temp = %d\n", temp);
+		temp++;
 	}
-	y = 4;
 
 	return 0;
 }
